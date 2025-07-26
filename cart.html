@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Richard Sanchez</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/cart.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Free Shipping on Orders Over ₦50,000!
+  </div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="logo"><img src="img/white-bg.png" alt="Logo" width="80" height="80"></div>
+
+    <div class="nav-menu">
+      <a href="/">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="dropdown">
+        <a href="#">Categories ▾</a>
+        <div class="dropdown-content">
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="shoes.html">Shoes</a>
+          <a href="accessories.html">Accessories</a>
+        </div>
+      </div>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="header-icons">
+      <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+      <a href="#" class="icon"><i class="fa-regular fa-user"></i></a>
+      <a href="cart.html" class="icon cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Cart Section -->
+  <main class="cart-container">
+    <h1>Your Shopping Cart</h1>
+
+    <div id="cart-items" class="cart-items">
+      <!-- Cart items inserted via JS -->
+    </div>
+
+    <div class="cart-summary">
+      <p>Total: ₦<span id="cart-total">0.00</span></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <!-- Script -->
+  <script src="script/cart.js"></script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 const searchToggle = document.getElementById('search-toggle');
 const searchBox = document.getElementById('search-box');
 const wishlistIcon = document.querySelector('.fa-heart');
+const cartCount = document.querySelector(".cart-count");
 
 searchToggle.addEventListener('click', (e) => {
     e.preventDefault();
@@ -11,7 +12,8 @@ searchToggle.addEventListener('click', (e) => {
   wishlistIcon.addEventListener('click', (e) => {
     e.preventDefault();
     alert("View your saved items (wishlist functionality coming soon)");
-  });// Sample product data
+  });
+  
 const featuredProducts = [
     {
         name: "Classic Denim Jacket",

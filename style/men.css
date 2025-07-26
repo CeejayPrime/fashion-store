@@ -1,6 +1,6 @@
 .category-hero {
   height: 85vh;
-  background: url('mens-hero.jpg') center/cover no-repeat;
+  background: url('img/mens-hero.jpg') center/cover no-repeat;
   padding: 400px 20px;
   text-align: center;
   color: white;
@@ -81,6 +81,8 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
 .product-card button:hover {
