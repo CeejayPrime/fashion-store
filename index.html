@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Sanchez</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        Free Shipping on Orders Over ₦50,000!
+    </div>
+
+    <!---Header-->
+    <header id="main-header">
+        <div class="logo"><img src="img/white-bg.png" alt="" width="80px" height="80px"></div>
+        
+        <!--Navigation Menu-->
+        <div class="nav-menu">
+            <a href="/">Home</a>
+            <a href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <a href="#">Categories ▾</a>
+                <div class="dropdown-content">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="shoes.html">Shoes</a>
+                <a href="accessories.html">Accessories</a>
+                </div>
+            </div>
+
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!--Header Icons-->
+
+        <div class="header-icons">
+            <a href="#" id="search-toggle" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input type="text" id="search-box" placeholder="search..." class="search-box">
+            <a href="" class="icon"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="icon"><i class="fa-regular fa-user"></i></a>
+            <a href="" class="icon cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <span class="cart-count"></span>
+        </div>
+    </header>
+
+    <!---Hero Section-->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Elevate Your Style</h1>
+                <p>Discover The Latest Trends In Fashion</p>
+                <a href="#" class="hero-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!---Categories Section-->
+    
+    <section class="categories">
+        <h2>Shop By Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="img/womens-clothes.jpg" alt="Women Fashion">
+                <!---img src="" alt="Women's Fashion Hover" class="hover-img" --->
+                <a href="women.html">Women</a>
+            </div>
+            <div class="category-card">
+                <img src="img/mens-clothes.jpg" alt="Men Fashion">
+                <!---img src="" alt="Men's Fashion Hover" class="hover-img" --->
+                <a href="men.html">Men</a>
+            </div>
+            <div class="category-card">
+                <img src="img/shoes.jpg" alt="Shoes">
+                <!---img src="" alt="Accessories Hover" class="hover-img" --->
+                <a href="shoes.html">Shoes</a>
+            </div>
+            <div class="category-card">
+                <img src="img/accessories.jpg" alt="Accessories">
+                <!---img src="" alt="Accessories Hover" class="hover-img" --->
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+    </section>
+
+    <!---Featured Products-->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="featured-container">
+            <!-- Products will be inserted here dynamically -->
+        </div>
+    </section>
+
+    <!--New Arrivals-->
+    <section class="new-arrivals-section">
+        <h2>🆕 New Arrivals</h2>
+        <div class="new-arrivals-grid" id="new-arrivals"></div>
+    </section>
+
+
+    <!--Best Sellers-->
+    <section class="best-sellers">
+        <h2>Best Sellers</h2>
+        <div class="best-seller-list">
+            <div class="best-seller-card">
+            <img src="img/gold-luxe.png" alt="Best Seller 1" />
+            <div class="best-info">
+                <h3>Gold Luxe Dress</h3>
+                <p>₦75,000</p>
+            </div>
+            </div>
+            <div class="best-seller-card">
+            <img src="img/urban-classic.png" alt="Best Seller 2" />
+            <div class="best-info">
+                <h3>Urban Classic</h3>
+                <p>₦62,000</p>
+            </div>
+            </div>
+            <div class="best-seller-card">
+            <img src="img/midnight.png" alt="Best Seller 3" />
+            <div class="best-info">
+                <h3>Midnight Glam</h3>
+                <p>₦85,000</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Customer Testimonials-->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-card active">
+                <img src="img/client1.jpg" alt="Client 1" />
+                <div class="stars">★★★★★</div>
+                <p>"Absolutely stunning! The fit, the fabric — everything is perfect."</p>
+                <h4>- Ada M.</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="img/client2.jpg" alt="Client 2" />
+                <div class="stars">★★★★★</div>
+                <p>"I felt so confident wearing this dress. Got so many compliments!"</p>
+                <h4>- Jennifer A.</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="img/client3.jpg" alt="Client 3" />
+                <div class="stars">★★★★★</div>
+                <p>"Delivery was fast and the quality exceeded my expectations."</p>
+                <h4>- Nkechi U.</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="images/client4.jpg" alt="Client 4" />
+                <div class="stars">★★★★★</div>
+                <p>"This is my third order and I’m obsessed. Highly recommend!"</p>
+                <h4>- Lola K.</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="images/client5.jpg" alt="Client 5" />
+                <div class="stars">★★★★★</div>
+                <p>"The best fashion investment I’ve made this year. Thank you!"</p>
+                <h4>- Ifeoma O.</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="images/client6.jpg" alt="Client 6" />
+                <div class="stars">★★★★★</div>
+                <p>"Excellent customer service and the product was exactly as shown."</p>
+                <h4>- Chiamaka N.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--Newletter signup-->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h3>JOIN OUR TRIBE</h3>
+            <p>Subscribe to get updates on new products, sales and promotions directly to your inbox</p>
+            <form class="newsletter-form" onsubmit="saveEmail(event)">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+            <button type="submit">SUBSCRIBE</button>
+            </form>
+            <p id="subscribe-message" class="subscribe-message"></p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand & Tagline -->
+            <div class="footer-brand">
+                <h2>Richard Sanchez</h2>
+                <p>Where fashion meets identity</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    <li><a href="best-sellers.html">Best Sellers</a></li>
+                    <li><a href="shop.html">Shop All</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Care -->
+            <div class="footer-care">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter & Social -->
+            <div class="footer-newsletter">
+                <h4>Join Our Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Richard Sanchez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>  
+</body>
+</html>

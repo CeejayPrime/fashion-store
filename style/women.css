@@ -1,0 +1,78 @@
+.category-hero {
+  background: url('women-banner.jpg') center/cover no-repeat;
+  padding: 400px 20px;
+  text-align: center;
+  color: white;
+}
+
+.category-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.category-hero p {
+  font-size: 18px;
+}
+
+/*Category Filter*/
+.category-filters {
+  padding: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+.category-filters select {
+  padding: 6px;
+}
+
+/*Category Products*/
+.category-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+/* Product Card Style */
+.product-card {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.product-card p {
+  color: #555;
+}
+
+/* Button Style */
+.product-card button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #ff4081; /* A fashion-forward pink */
+}
+
