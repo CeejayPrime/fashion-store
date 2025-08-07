@@ -35,6 +35,7 @@
             </div>
 
             <a href="shop.html">Shop</a>
+            <a href="events.html">Upcoming Events</a>
             <a href="contact.html">Contact Us</a>
         </div>
 
@@ -48,6 +49,13 @@
             <span class="cart-count">0</span>
         </div>
     </header>
+
+    <!--Marquee Announcement-->
+    <div class="marquee">
+        <marquee behavior="scroll" direction="left">
+            📣 Upcoming: Fashion Week Lagos (Oct 10, 2025) | 🎁 Holiday Sales Bonanza (Dec 5–20, 2025) | 🚚 Free Shipping on Orders Over ₦50,000!
+        </marquee>
+    </div>
 
     <!---About Header Header-->
 
@@ -70,41 +78,95 @@
       <h2>Meet the Team</h2>
       <div class="team-grid">
         <!-- Repeat for each team member -->
+        <!-- Team Member: Daniel Obida -->
         <div class="team-card">
-          <img src="img/chinonso.png" alt="Chinonso Cajetan">
-          <h3>Chinonso Cajetan</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contributed to product design and strategy.</p>
+            <img src="img/daniel.jpg" alt="Daniel Obida">
+            <h3>Daniel Obida</h3>
+            <strong>Role:</strong>
+            <p>Navigation & Page Consistency</p>
+            <strong>Contributions:</strong>
+            <ul>
+                <li>Developed the navigation menu and footer sections used across all pages.</li>
+                <li>Integrated a scrolling marquee for upcoming events across all pages.</li>
+                <li>Ensured consistent layout across pages by applying reusable components.</li>
+                <li>Supported team in applying responsive navigation bar styling and behavior.</li>
+            </ul>
         </div>
+
+        <!-- Team Member: Alvina Okeowo -->
         <div class="team-card">
-          <img src="img/daniel.jpg" alt="Daniel Obida">
-          <h3>Daniel Obida</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Handled brand identity and visuals.</p>
+            <img src="img/alvina.png" alt="Alvina Okeowo">
+            <h3>Alvina Okeowo</h3>
+            <strong>Role:</strong>
+            <p>Frontend Structure & Page Development</p>
+            <strong>Contributions:</strong>
+            <ul>
+                <li>Created foundational HTML structure for key pages like <code>index.html</code> and <code>events.html</code>.</li>
+                <li>Designed and implemented the Events section with semantic HTML.</li>
+                <li>Collaborated on layout and alignment of sections using HTML/CSS grid.</li>
+                <li>Ensured content hierarchy and readability across pages.</li>
+            </ul>
         </div>
+
+        <!-- Team Member: Chinonso Cajethan -->
         <div class="team-card">
-          <img src="img/chime.jpg" alt="Chime Chukwuemeka">
-          <h3>Chime Chukwuemeka</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Responsible for web development and UX.</p>
+            <img src="img/chinonso.png" alt="Chinonso Cajethan">
+            <h3>Chinonso Cajethan</h3>
+            <strong>Role:</strong>
+            <p>Cart Logic & Product Rendering</p>
+            <strong>Contributions:</strong>
+            <ul>
+                <li>Wrote all major JavaScript logic for the cart system (<code>cart.js</code>, <code>categories.js</code>).</li>
+                <li>Implemented Add to Cart, quantity update, remove, and localStorage persistence features.</li>
+                <li>Handled dynamic product card rendering for categories and featured products.</li>
+                <li>Maintained cart count across multiple pages using shared scripts.</li>
+            </ul>
         </div>
+
+        <!-- Team Member: Sumaila Winner -->
         <div class="team-card">
-          <img src="img/majesty.jpg" alt="Majesty Ejashan">
-          <h3>Majesty Ejashan</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Managed customer experience and outreach.</p>
+            <img src="img/winner.jpg" alt="Sumaila Winner">
+            <h3>Sumaila Winner</h3>
+            <strong>Role:</strong>
+            <p>About & General Page Layout</p>
+            <strong>Contributions:</strong>
+            <ul>
+                <li>Developed layout and content for the <code>about.html</code> page.</li>
+                <li>Helped structure other static pages (e.g., <code>contact.html</code>, <code>women.html</code>, <code>men.html</code>) using reusable layout styles.</li>
+                <li>Collaborated with other team members to ensure semantic and accessible HTML.</li>
+            </ul>
         </div>
+
+        <!-- Team Member: Chime Chukwuemeka -->
         <div class="team-card">
-          <img src="img/winner.jpg" alt="Sumaila Winner">
-          <h3>Sumaila Winner</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In charge of supply chain and logistics.</p>
+            <img src="img/chime.jpg" alt="Chime Chukwuemeka">
+            <h3>Chime Chukwuemeka</h3>
+            <strong>Role:</strong>
+            <p>Contact Form & Interactivity</p>
+            <strong>Contributions:</strong>
+            <ul>
+                <li>Built the <code>contact.js</code> logic for handling form submissions.</li>
+                <li>Stored submitted form data in localStorage and added confirmation messages.</li>
+                <li>Ensured contact form resets after successful submission.</li>
+                <li>Supported debugging of JavaScript errors on <code>contact.html</code>.</li>
+            </ul>
         </div>
+
+        <!-- Team Member: Majesty Ejashan -->
         <div class="team-card">
-          <img src="img/alvina.png" alt="Alvina Okeowo">
-          <h3>Alvina Okeowo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contributed to creative content and styling.</p>
+            <img src="img/majesty.jpg" alt="Majesty Ejashan">
+            <h3>Majesty Ejashan</h3>
+            <strong>Role:</strong>
+            <p>Testing, Debugging & Responsiveness</p>
+            <strong>Contributions:</strong>
+            <ul>
+                <li>Focused on device testing for mobile and desktop screens.</li>
+                <li>Helped debug UI alignment and JavaScript functionality across pages.</li>
+                <li>Suggested responsive grid and layout adjustments for smaller devices.</li>
+                <li>Assisted others with error-checking and optimizing UX.</li>
+            </ul>
         </div>
-        <div class="team-card">
-          <img src="img/benita.jpg" alt="Benita Chris">
-          <h3>Benita Chris</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oversaw social media and brand campaigns.</p>
-        </div>
+
       </div>
     </div>
   </section>

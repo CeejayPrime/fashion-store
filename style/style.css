@@ -25,9 +25,19 @@ body{
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 1000;
     background-color: #e1e1e1;
 }
+
+.marquee {
+  background-color: #f8f8f8;
+  padding: 8px 0;
+  font-weight: bold;
+  color: #333;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
 
 .logo {
     font-size: 1.8rem;
@@ -38,18 +48,79 @@ body{
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav-menu a {
     text-decoration: none;
     color: #444;
     letter-spacing: 1px;
+    font-weight: 500;
+    position: relative;
 }
 
 .nav-menu a:hover {
     color: #e91e63;
 }
 
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Mobile + Tablet Styles */
+@media (max-width: 1200px) {
+  /* Show hamburger */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Stack layout */
+  #main-header {
+    flex-wrap: wrap;
+  }
+
+  /* Hide nav by default */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  .nav-menu a {
+    padding: 10px 20px;
+  }
+
+  /* Show nav when active */
+  .nav-menu.active {
+    display: flex;
+  }
+
+  /* Move icons to bottom row, right-aligned */
+  .header-icons {
+    order: 3;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px 20px;
+  }
+
+  .search-box {
+    display: inline-block;
+  }
+}
 /* Positioning for dropdown */
 
 .dropdown {
@@ -704,3 +775,158 @@ body{
   margin: 0.5rem 0;
   color: #333;
 }
+
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .product-card img {
+    height: 400px;
+  }
+
+  .best-seller-card {
+    width: 90%;
+  }
+
+  .testimonial-carousel {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .hero {
+    height: 70vh;
+    background-position: top;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .product-card img {
+    height: 300px;
+  }
+
+  .best-seller-card {
+    width: 100%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .contact-form-container {
+    padding: 1rem;
+  }
+}
+
+/*Mobile Styles
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 24px;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+  }
+
+  .product-card img {
+    height: 250px;
+  }
+
+  .new-arrival-card img {
+    height: 200px;
+  }
+
+  .best-sellers h2,
+  .new-arrivals-section h2,
+  .categories h2,
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.9rem;
+  }
+
+  .footer h2,
+  .footer h4 {
+    font-size: 1.1rem;
+  }
+
+  .nav-menu {
+    gap: 10px;
+  }
+
+  .cart-count {
+    padding: 2px 5px;
+    font-size: 10px;
+  }
+
+  .newsletter-section,
+  .testimonials,
+  .best-sellers,
+  .contact-form-container {
+    padding: 30px 10px;
+  }
+}*/

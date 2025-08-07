@@ -1,0 +1,46 @@
+/* Events Section */
+#events-list {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+#events-list h2 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#events-list article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+#events-list article:hover {
+    transform: translateY(-5px);
+}
+
+#events-list p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #events-list {
+        padding: 0 10px;
+    }
+
+    #events-list h2 {
+        font-size: 20px;
+    }
+
+    #events-list p {
+        font-size: 14px;
+    }
+}

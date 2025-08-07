@@ -1,3 +1,4 @@
+<!-- events.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Sanchez</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/men.css">
+    <link rel="stylesheet" href="style/events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -40,6 +41,7 @@
         </div>
 
         <!--Header Icons-->
+
         <div class="header-icons">
             <a href="#" id="search-toggle" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
             <input type="text" id="search-box" placeholder="search..." class="search-box">
@@ -49,35 +51,29 @@
             <span class="cart-count">0</span>
         </div>
     </header>
-
-    <!--Marquee Announcement-->
+    <!-- Marquee Announcement -->
     <div class="marquee">
-        <marquee behavior="scroll" direction="left">
-            📣 Upcoming: Fashion Week Lagos (Oct 10, 2025) | 🎁 Holiday Sales Bonanza (Dec 5–20, 2025) | 🚚 Free Shipping on Orders Over ₦50,000!
-        </marquee>
+    <marquee behavior="scroll" direction="left">
+        📣 Upcoming: Fashion Week Lagos (Oct 10, 2025) | 🎁 Holiday Sales Bonanza (Dec 5–20, 2025) | 🚚 Free Shipping on Orders Over ₦50,000!
+    </marquee>
     </div>
 
-    <!--Men's Category Hero Section-->
-    <section class="category-hero">
-        <h1>Men's Collection</h1>
-        <p>Discover the latest trends in men’s fashion</p>
+  <main>
+    <section id="events-list">
+      <article>
+        <h2>Fashion Week Lagos</h2>
+        <p>Date: Oct 10, 2025</p>
+        <p>Join us for the latest in Nigerian fashion trends.</p>
+      </article>
+      <article>
+        <h2>Holiday Sales Bonanza</h2>
+        <p>Date: Dec 5–20, 2025</p>
+        <p>Massive discounts on selected items. Don’t miss out!</p>
+      </article>
     </section>
+  </main>
 
-    <div class="category-filters">
-        <label for="sort">Sort by:</label>
-        <select id="sort">
-            <option value="latest">Latest</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="bestselling">Best Selling</option>
-        </select>
-    </div>
-
-    <section class="category-products">
-        <!--Product will be added via Javascript DOM-->
-    </section>
-
-    <!--Customer Testimonials-->
+   <!--Customer Testimonials-->
     <section class="testimonials">
         <h2>What Our Clients Say</h2>
         <div class="testimonial-carousel">
@@ -191,6 +187,5 @@
             <p>&copy; 2025 Richard Sanchez. All rights reserved.</p>
         </div>
     </footer>
-
-<script src="script/men.js"></script>
-</body> 
+</body>
+</html>
